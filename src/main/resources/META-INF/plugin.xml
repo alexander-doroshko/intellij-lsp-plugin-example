@@ -10,7 +10,9 @@
     ]]></description>
 
     <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.ultimate</depends>
 
     <extensions defaultExtensionNs="com.intellij">
+        <platform.lsp.serverSupportProvider implementation="com.lsp_plugin_example.DartLspServerSupportProvider"/>
     </extensions>
 </idea-plugin>
