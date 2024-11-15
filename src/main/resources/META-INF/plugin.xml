@@ -1,18 +1,16 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.alexanderdoroshko.intellijlsppluginexample</id>
-    <name>intellij-lsp-plugin-example</name>
-    <vendor>alexander-doroshko</vendor>
+    <id>intellij-lsp-plugin-example</id>
+    <!--suppress PluginXmlValidity -->
+    <name>LSP Plugin Example</name>
+    <vendor>Alexander Doroshko</vendor>
+    <description><![CDATA[
+    This is a plugin for IntelliJ-based IDEs that demonstrates the usage of the
+    <a href="https://plugins.jetbrains.com/docs/intellij/language-server-protocol.html">LSP API</a>
+    ]]></description>
 
     <depends>com.intellij.modules.platform</depends>
 
-    <resource-bundle>messages.MyBundle</resource-bundle>
-
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.alexanderdoroshko.intellijlsppluginexample.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
     </extensions>
-
-    <applicationListeners>
-        <listener class="com.github.alexanderdoroshko.intellijlsppluginexample.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
-    </applicationListeners>
 </idea-plugin>
